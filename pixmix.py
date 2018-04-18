@@ -46,9 +46,9 @@ def pisxmix(filename, directory=None, xpix=None, ypix=None):
     pix[pix == 255*3] = 0
 
     # Pad to (xpix, ypix):
-    xpix = xpix or pix.shape[0]
-    ypix = ypix or pix.shape[1]
-    pix = np.pad(pix, ((0, ypix - pix.shape[1]), (0, xpix - pix.shape[0])), 'constant', constant_values=(0))
+    xpix = xpix or pix.shape[1]
+    ypix = ypix or pix.shape[0]
+    pix = np.pad(pix, ((0, ypix - pix.shape[0]), (0, xpix - pix.shape[1])), 'constant', constant_values=(0))
 
     return pix
 
