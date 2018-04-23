@@ -8,3 +8,10 @@ The project uses Python Imaging Library (PIL). If you don't have it, do the foll
 ```
 $ pip install Pillow
 ```
+**Install development setup**
+
+```
+$ git clone https://github.com/egorseliunin/pixmix.git
+$ cd pixfix
+$ python setup.py install --user
+```
