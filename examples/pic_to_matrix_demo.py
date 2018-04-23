@@ -7,7 +7,7 @@ An example of packege usage. It converts a picture "example.png" to
 an ASCII matrix file and plots the result.
 """
 import pixmix
-import matplotlib as plt
+import matplotlib.pyplot as plt
 import scipy
 
 if __name__=="__main__":
@@ -18,8 +18,12 @@ if __name__=="__main__":
     # Saves the matrix into ASCII file
     pixmix.saveTo(pix, filename)
 
-    a = scipy.loadtxt('test.out', delimiter=" ")
-    plt.imshow(a)
+    # Read the matrix from a file
+    a = scipy.loadtxt(filename+".out", delimiter=" ")
+    # Plot the matrix
+    plt.imshow(a, cmap='gray_r')
+    plt.xlabel("X index")
+    plt.ylabel("Y index")
     plt.show()
 
 
