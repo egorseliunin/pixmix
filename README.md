@@ -20,6 +20,7 @@ If it doesn't work, add the path to the directory pixmix to $PYTHONPATH
 Example of usage
 ----
 **Command line**
+
 copy `pixmix/pixmix.py` and your image (e.g. with the name 'image.png') to the same foulder and run the following command in the command line
 ```
 $ python pixmix.py -n image.png
@@ -30,4 +31,5 @@ To see alternative options for `pixmix.py` use the following command:
 $ python pixmix.py -h
 ```
 **Python script**
+
 To use `pixmix.py` see example `examples/pic_to_matrix_demo.py`
