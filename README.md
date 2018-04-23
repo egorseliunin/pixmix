@@ -1,6 +1,6 @@
 pixmix
 ----
-A project to covert an image to a pixel matrix and saves it to an ASCII file.
+A project to covert an image to a pixel matrix. The matrix then is saved in ASCII format. 
 
 Getting started
 ----
