@@ -9,7 +9,7 @@ import argparse
 import numpy as np
 import PIL.Image
 
-def pisxmix(filename, directory=None, xpix=None, ypix=None):
+def pixmix(filename, directory=None, xpix=None, ypix=None):
     """
     Converts an image to a pixel 2D matrix.
 
@@ -122,7 +122,7 @@ if __name__ == "__main__":
     if ydim:
         ydim = int(ydim)
 
-    pix = pisxmix(filename, directory=path, xpix=xdim, ypix=ydim)
+    pix = pixmix(filename, directory=path, xpix=xdim, ypix=ydim)
     saveTo(pix, filename, directory=savepath)
 
 
