@@ -6,7 +6,7 @@ convertion of a picture to a matrix
 An example of packege usage. It converts a picture "example.png" to
 an ASCII matrix file and plots the result.
 """
-import pixmix
+import pixmix.pixmix as pixmix
 import matplotlib.pyplot as plt
 import scipy
 
