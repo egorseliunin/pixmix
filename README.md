@@ -1,6 +1,6 @@
 pixmix
 ----
-A project to covert an image to a pixel matrix
+A project to covert an image to a pixel matrix and saves it to an ASCII file.
 
 Getting started
 ----
@@ -15,3 +15,4 @@ $ git clone https://github.com/egorseliunin/pixmix.git
 $ cd pixfix
 $ python setup.py install --user
 ```
+If it doesn't work, add the path to the directory pixmix to $PYTHONPATH
